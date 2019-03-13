@@ -1,1 +1,1 @@
-# Image-Mosaicking
+# Image-Mosaicing
