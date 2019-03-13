@@ -1,5 +1,5 @@
-a = imread('DanaHallWay1\DSC_0281.JPG');
-b = imread('DanaHallWay1\DSC_0282.JPG');
+a = imread('images\eg1\left.JPG');
+b = imread('images\eg2\right.JPG');
 ima = rgb2gray(a);
 imb = rgb2gray(b);
 
