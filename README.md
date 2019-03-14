@@ -17,6 +17,7 @@ Refer to [example](https://github.com/zhangchicheng/Image-Mosaicing/blob/master/
   ![alt text](https://github.com/zhangchicheng/Image-Mosaicing/blob/master/images/eg1/badline.jpg)
   
 * [Apply RANSAC](https://github.com/zhangchicheng/Image-Mosaicing/blob/master/src/runRANSAC.m)
+
   Since these correspondences are likely to have many errors, we should use RANSAC to robustly estimate the homography from the noisy correspondences.
   
    ![alt text](https://github.com/zhangchicheng/Image-Mosaicing/blob/master/images/eg1/goodline.jpg)
