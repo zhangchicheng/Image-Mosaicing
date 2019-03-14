@@ -1,19 +1,24 @@
 # Image-Mosaicing
 Image mosaicing is the process of combining multiple photographic images with overlapping fields of view to produce a segmented panorama. In this repo, a image mosaicing pipeline was presented and the experimental results demonstrate that framework has good performance on accuracy and speed.
 # Usage
-Refer to example
+Refer to [example](https://github.com/zhangchicheng/Image-Mosaicing/blob/master/example.m)
 # Details
-* [Detecting Harris Corners](https://github.com/zhangchicheng/Image-Mosaicing/blob/master/src/detectHarris.m)
+* [Detect Harris Corners](https://github.com/zhangchicheng/Image-Mosaicing/blob/master/src/detectHarris.m)
 
   In the first phase of this approach, two RGB images were converted to grayscale due to the data reduction and simplicity. Then, Harris corner detector was applied to both images.
+  ![alt text](https://github.com/zhangchicheng/Image-Mosaicing/blob/master/images/eg1/harriscorner1.jpg)
+  ![alt text](https://github.com/zhangchicheng/Image-Mosaicing/blob/master/images/eg1/harriscorner2.jpg)
 
-* [Computing Normalized Cross Correlation](https://github.com/zhangchicheng/Image-Mosaicing/blob/master/src/calcNormxcorrelation.m)
+* [Compute Normalized Cross Correlation](https://github.com/zhangchicheng/Image-Mosaicing/blob/master/src/calcNormxcorrelation.m)
 
   Given two set of corners from the images, we compute normalized cross correlation (NCC) of image patches centered at each cornerand choose potential corner matches by finding pair of corners (one from each image) such that they have the highest NCC value.
-* [Computing Normalized Cross Correlation](https://github.com/zhangchicheng/Image-Mosaicing/blob/master/src/runRANSAC.m)
-
+  ![alt text](https://github.com/zhangchicheng/Image-Mosaicing/blob/master/images/eg1/badlines.jpg)
+  
+* [Apply RANSAC](https://github.com/zhangchicheng/Image-Mosaicing/blob/master/src/runRANSAC.m)
   Since these correspondences are likely to have many errors, we should use RANSAC to robustly estimate the homography from the noisy correspondences.
-* [Computing Normalized Cross Correlation](https://github.com/zhangchicheng/Image-Mosaicing/blob/master/src/findHomography.m)
+   ![alt text](https://github.com/zhangchicheng/Image-Mosaicing/blob/master/images/eg1/goodlines.jpg)
+  
+* [Estimate the homography](https://github.com/zhangchicheng/Image-Mosaicing/blob/master/src/findHomography.m)
 
   Finally, using thehomography, we warp one image onto the other one, blending overlapping pixels together to create a single image.
 # Result
