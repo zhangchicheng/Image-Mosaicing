@@ -6,6 +6,7 @@ Refer to [example](https://github.com/zhangchicheng/Image-Mosaicing/blob/master/
 * [Detect Harris Corners](https://github.com/zhangchicheng/Image-Mosaicing/blob/master/src/detectHarris.m)
 
   In the first phase of this approach, two RGB images were converted to grayscale due to the data reduction and simplicity. Then, Harris corner detector was applied to both images.
+  
   ![alt text](https://github.com/zhangchicheng/Image-Mosaicing/blob/master/images/eg1/harriscorner1.jpg)
 
 * [Compute Normalized Cross Correlation](https://github.com/zhangchicheng/Image-Mosaicing/blob/master/src/calcNormxcorrelation.m)
