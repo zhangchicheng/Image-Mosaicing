@@ -1,5 +1,5 @@
 # Image-Mosaicing
-Image mosaicing is the process of combining multiple photographic images with overlapping fields of view to produce a segmented panorama.
+Image mosaicing is the process of combining multiple photographic images with overlapping fields of view to produce a segmented panorama. In this repo, a image mosaicing pipeline was presented and the experimental results demonstrate that framework has good performance on accuracy and speed.
 # Usage
 Refer to example
 # Details
