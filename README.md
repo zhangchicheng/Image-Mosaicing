@@ -3,7 +3,8 @@ Image mosaicing is the process of combining multiple photographic images with ov
 # Usage
 Refer to example
 # Details
-## haris corner detection
+## Detecting Harris Corners
+$R = (I_{x}^{2}I_{y}^{2}-I_{xy}^{2})-k(I_{x}^{2}+I_{y}^{2})^{2}$
 # Result
 ![alt text](https://github.com/zhangchicheng/Image-Mosaicing/blob/master/images/eg1/left.JPG "left")
 ![alt text](https://github.com/zhangchicheng/Image-Mosaicing/blob/master/images/eg1/right.JPG "right")
