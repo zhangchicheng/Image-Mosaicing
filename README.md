@@ -12,11 +12,11 @@ Refer to [example](https://github.com/zhangchicheng/Image-Mosaicing/blob/master/
 * [Compute Normalized Cross Correlation](https://github.com/zhangchicheng/Image-Mosaicing/blob/master/src/calcNormxcorrelation.m)
 
   Given two set of corners from the images, we compute normalized cross correlation (NCC) of image patches centered at each cornerand choose potential corner matches by finding pair of corners (one from each image) such that they have the highest NCC value.
-  ![alt text](https://github.com/zhangchicheng/Image-Mosaicing/blob/master/images/eg1/badlines.jpg)
+  ![alt text](https://github.com/zhangchicheng/Image-Mosaicing/blob/master/images/eg1/badline.jpg)
   
 * [Apply RANSAC](https://github.com/zhangchicheng/Image-Mosaicing/blob/master/src/runRANSAC.m)
   Since these correspondences are likely to have many errors, we should use RANSAC to robustly estimate the homography from the noisy correspondences.
-   ![alt text](https://github.com/zhangchicheng/Image-Mosaicing/blob/master/images/eg1/goodlines.jpg)
+   ![alt text](https://github.com/zhangchicheng/Image-Mosaicing/blob/master/images/eg1/goodline.jpg)
   
 * [Estimate the homography](https://github.com/zhangchicheng/Image-Mosaicing/blob/master/src/findHomography.m)
 
