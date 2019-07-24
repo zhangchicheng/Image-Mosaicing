@@ -26,4 +26,4 @@ Refer to [example](https://github.com/zhangchicheng/Image-Mosaicing/blob/master/
 
   Finally, using thehomography, we warp one image onto the other one, blending overlapping pixels together to create a single image.
 
-<img src=https://github.com/zhangchicheng/Image-Mosaicing/blob/master/images/eg1/combined.jpg width="500">
+  <img src=https://github.com/zhangchicheng/Image-Mosaicing/blob/master/images/eg1/combined.jpg width="500">
