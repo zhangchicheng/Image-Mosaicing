@@ -7,23 +7,23 @@ Refer to [example](https://github.com/zhangchicheng/Image-Mosaicing/blob/master/
 
   In the first phase of this approach, two RGB images were converted to grayscale due to the data reduction and simplicity. Then, Harris corner detector was applied to both images.
   
-  ![alt text](https://github.com/zhangchicheng/Image-Mosaicing/blob/master/images/eg1/harriscorner1.jpg)
-  ![alt text](https://github.com/zhangchicheng/Image-Mosaicing/blob/master/images/eg1/harriscorner2.jpg)
+  <img src=https://github.com/zhangchicheng/Image-Mosaicing/blob/master/images/eg1/harriscorner1.jpg width="300">
+  <img src=https://github.com/zhangchicheng/Image-Mosaicing/blob/master/images/eg1/harriscorner2.jpg width="300">
 
 * [Compute Normalized Cross Correlation](https://github.com/zhangchicheng/Image-Mosaicing/blob/master/src/calcNormxcorrelation.m)
 
   Given two set of corners from the images, we compute normalized cross correlation (NCC) of image patches centered at each cornerand choose potential corner matches by finding pair of corners (one from each image) such that they have the highest NCC value.
   
-  ![alt text](https://github.com/zhangchicheng/Image-Mosaicing/blob/master/images/eg1/badline.jpg)
+  <img src=https://github.com/zhangchicheng/Image-Mosaicing/blob/master/images/eg1/badline.jpg width="300">
   
 * [Apply RANSAC](https://github.com/zhangchicheng/Image-Mosaicing/blob/master/src/runRANSAC.m)
 
   Since these correspondences are likely to have many errors, we should use RANSAC to robustly estimate the homography from the noisy correspondences.
   
-   ![alt text](https://github.com/zhangchicheng/Image-Mosaicing/blob/master/images/eg1/goodline.jpg)
+  <img src=https://github.com/zhangchicheng/Image-Mosaicing/blob/master/images/eg1/goodline.jpg width="300">
   
 * [Estimate the homography](https://github.com/zhangchicheng/Image-Mosaicing/blob/master/src/findHomography.m)
 
   Finally, using thehomography, we warp one image onto the other one, blending overlapping pixels together to create a single image.
 # Result
-![alt text](https://github.com/zhangchicheng/Image-Mosaicing/blob/master/images/eg1/combined.jpg "combined")
+<img src=https://github.com/zhangchicheng/Image-Mosaicing/blob/master/images/eg1/combined.jpg width="300">
