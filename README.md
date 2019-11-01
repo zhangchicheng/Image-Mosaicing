@@ -24,6 +24,6 @@ Refer to [example](https://github.com/zhangchicheng/Image-Mosaicing/blob/master/
   
 * [Estimate the homography](https://github.com/zhangchicheng/Image-Mosaicing/blob/master/src/findHomography.m)
 
-  Finally, using thehomography, we warp one image onto the other one, blending overlapping pixels together to create a single image.
+  Finally, using the homography, we warp one image onto the other one, blending overlapping pixels together to create a single image.
 
   <img src=https://github.com/zhangchicheng/Image-Mosaicing/blob/master/images/eg1/combined.jpg width="500">
