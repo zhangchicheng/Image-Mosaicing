@@ -25,8 +25,8 @@ function [I, mask] = warpImages( H, src, dst, dst_mask )
     Height = bottom-top+1;
     Width = right-left+1;
     
-    if (Height>5000 || Width > 5000)
-        error('Error. \nWarpImage is too large!')
+    if (Height>15000 || Width > 15000)
+        error('WarpImage dimensions (%dx%d) exceed maximum allowed size of 15000x15000. This may indicate an invalid homography matrix or very large input images.', Height, Width)
     end
     
     nDstTop = 1-top+1;
